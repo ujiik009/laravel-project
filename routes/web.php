@@ -18,6 +18,6 @@ Route::get('/', function () {
     //return ['name' => 'apirat' , "surname" => "pramchana"];
 });
 
-Route::any('/profile', function() {
-    return view('profile');
-});
+Route::any('/birtYear', "ProfileController@getYear");
+
+Route::any('/profile/{info}','HomeWork1@getInfomation');
